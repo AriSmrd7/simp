@@ -39,13 +39,13 @@ if (!empty($_SESSION['username'])) {
               <h6 class="font-weight-light">Silahkan login terlebih dahulu.</h6>
               <div class="row w-full ml-1 mt-2 mb-1">
               <?php 
-                if(isset($_GET['pesan'])){
-                  if($_GET['pesan'] == "gagal"){
+                if(isset($_GET['msg'])){
+                  if($_GET['msg'] == "failed"){
                     echo'
                     <div class="text-danger">
                       Username atau password salah.
                     </div>';
-                  }else if($_GET['pesan'] == "logout"){
+                  }else if($_GET['msg'] == "logout"){
                     echo'
                     <div class="text-warning>
                       Berhasil logout.
